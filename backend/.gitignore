@@ -1,0 +1,46 @@
+# Node modules
+node_modules/
+
+# Build directories for Next.js
+.next/
+
+# Build output for Node.js (if any)
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variable files (don't commit sensitive information)
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# MacOS system files
+.DS_Store
+
+# IDE files and settings (e.g., VS Code, JetBrains)
+.idea/
+.vscode/
+
+# Temporary files from editors
+*.swp
+*.swo
+
+# Next.js specific
+.cache/
+
+# Yarn Integrity file (if using Yarn)
+.yarn-integrity
+
+# TypeScript cache (if using TypeScript)
+*.tsbuildinfo
+
+# Optional: If you don't want to track the deployment files
+/public/static/
+
+# Optional: Ignore the build and dist folder in case you use custom build commands
+dist/
