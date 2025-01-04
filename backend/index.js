@@ -14,16 +14,17 @@ app.use(express.json());
 app.use('/api/bookings', bookingRoutes);
 
 // Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/restaurant', {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-}).then(() => {
+mongoose.connect('mongodb://localhost:27017/restaurant',
+
+).then(() => {
   console.log('Connected to MongoDB');
-  app.listen(5000, () => console.log('Server running on port 5000'));
+  
 }).catch(err => console.error(err));
 
 app.get("/ping", (req,res)=>{
     res.send("<h1>Pong")
 })
+
+app.listen(5000, () => console.log('Server running on port 5000'));
 
 
